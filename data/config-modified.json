@@ -1,0 +1,125 @@
+{
+    "developmentFeatures": {
+        "machineControlEnabled": false
+    },
+    "instances": [
+        {
+            "applicationType": "standard",
+            "developmentFeatures": {
+                "borderFiltersEnabled": true,
+                "mmiStreamWidthCompatibilityEnabled": true,
+                "objectInspectorEnabled": false,
+                "reducedBlockAlgoEnabled": false,
+                "usePastTriggerParamsOnThreeEdgeFilter": false
+            },
+            "interfaces": {
+                "gevCamera": {
+                    "localGateway": "192.168.2.1",
+                    "localIpAddress": "192.168.2.141",
+                    "localMacAddress": "00:50:C2:90:D0:91",
+                    "localSubnetMask": "255.255.255.0"
+                },
+                "gevCameraSources": [
+                    {
+                        "localGateway": "192.168.2.1",
+                        "localIpAddress": "192.168.2.142",
+                        "localMacAddress": "00:50:C2:90:D0:90",
+                        "localSubnetMask": "255.255.255.0"
+                    }
+                ],
+                "xport": {
+                    "localGateway": "192.168.2.1",
+                    "localIpAddress": "192.168.2.141",
+                    "localMacAddress": "00:50:C2:90:D0:91",
+                    "localSubnetMask": "255.255.255.0"
+                }
+            },
+            "ioSystem": {
+                "blowoutMode": "boundingBox",
+                "driver": "modbusEvk",
+                "features": {
+                    "ioSystemCheckEnabled": false,
+                    "materialEvaluationBucketModeEnabled": false,
+                    "sensoricPermanentValveLoadCheckEnabled": false,
+                    "valveServerEnabled": true
+                },
+                "inputs": {
+                    "brightAndDarkCalibrationInputsEnabled": false,
+                    "valveCleaningInputEnabled": false,
+                    "valveLockInputEnabled": false,
+                    "valveTestInputEnabled": false
+                },
+                "ioMasterCombineModel": "or",
+                "ioMasterMachine": 0,
+                "maxValves": 480,
+                "modbusIpAddress": "192.168.2.111",
+                "numberOfInputs": 24,
+                "numberOfOutputs": 24,
+                "numberOfValveblocks": 2,
+                "numberOfValvesPerValveblock": 240,
+                "outputs": {
+                    "cameraTriggerOutputEnabled": false,
+                    "useSecondCameraTriggerOutputForSecondCamera": false
+                },
+                "valveLayout": "camera",
+                "valveMultiples": 0,
+                "valveMultiplesDistance": 0,
+                "valveOffset": 0,
+                "valveTimeResolution": 1
+            },
+            "semAddress": {
+                "camera": 0,
+                "machine": 0
+            },
+            "sourceCameras": [
+                {
+                    "cameraActiveAreaOffset": 0,
+                    "cameraActiveAreaWidth": 2032,
+                    "cameraMacAddress": "00:01:0d:c7:24:17",
+                    "cameraVisibleAreaOffset": 0,
+                    "cameraVisibleAreaWidth": 2032,
+                    "filterModule": {
+                        "despeckleFilterEnabled": false,
+                        "horizDilationFilterEnabled": false,
+                        "horizDilationFilterWidth": 0,
+                        "moduleEnabled": false
+                    },
+                    "gevCameraParameters": {
+                        "maxGvcpRetries": 0,
+                        "sourceStreamId": 0,
+                        "stopStreamOnVirtCamWriteEnabled": false,
+                        "virtCamStreamHidingEnabled": false
+                    },
+                    "imageProcession": {
+                        "binning": 1,
+                        "dualLineCamColorConvergenceCorrectionLineDelay": 1,
+                        "dualLineCamColorConvergenceCorrectionType": "none",
+                        "dynamicBrightCalibrationEnabled": false,
+                        "imageMirroringEnabled": false,
+                        "lowPassFilterLength": 0
+                    },
+                    "objectClassMask": [
+                        true,
+                        true,
+                        true,
+                        true,
+                        true,
+                        true,
+                        true,
+                        true,
+                        true,
+                        true,
+                        true,
+                        true,
+                        true,
+                        false,
+                        true,
+                        true
+                    ],
+                    "sensorType": "gevEos"
+                }
+            ],
+            "userDefinedName": "CamObjAppl A/0"
+        }
+    ]
+}
